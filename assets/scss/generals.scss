@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 1s;
+}
+// ------Здесь переменные-----
+// -------Шрифты------
+
+// ---------Цвета--------
+$black-text: #000;
+
+// --------Ограничивающие контейнеры-----
+$wrap: 1470px; //----это общее полотно, по макету 1440px, но +отступы по 15px-----
+$container: 1170px; //----контейнер с контентом----
+//----Выравнивание по центру----
+$mc: 0 auto; //----margin centr----
+//----Размер шрифта----
+$text: 16px;
+
+//-----Общие настройки----
+body {
+  color: $black-text;
+  font-size: $text;
+}
+
+.wrapper {
+  max-width: $wrap;
+  margin: $mc;
+  padding: 0 15px;
+}
+
+.container {
+  max-width: $container;
+  margin: $mc;
+}

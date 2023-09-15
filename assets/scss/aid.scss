@@ -1,10 +1,11 @@
 .aid {
    margin-bottom: 200px;
    margin-top: 200px;
+   padding: 0 15px;
 
    &__title {
       color: $black-text;
-      font-family: Roboto Slab;
+      font-family: $robslab-r;
       font-size: 48px;
       font-style: normal;
       font-weight: 400;
@@ -19,6 +20,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      margin-right: 48px;
    }
 
    &__inner-wrap {
@@ -27,7 +29,7 @@
 
    &__inner-text {
       color: $black-text;
-      font-family: Inter;
+      font-family: "Inter-Light";
       font-size: 18px;
       font-style: normal;
       font-weight: 300;
@@ -44,7 +46,7 @@
       width: 560px;
       background-color: #FFAC1C;
       color: #FFF;
-      font-family: Roboto Slab;
+      font-family: $robslab-r;
       font-size: 24px;
       font-style: normal;
       font-weight: 700;
@@ -55,5 +57,13 @@
       padding-bottom: 13px;
       text-align: center;
       border-radius: 22px;
+   }
+
+   &__inner-img {
+      background-image: url('../img/FRA95I6W93k.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
    }
 }

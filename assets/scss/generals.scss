@@ -16,8 +16,20 @@ a {
   text-decoration: none;
   transition: 1s;
 }
+
+@font-face {
+  font-family: "RobotoSlab-Regular";
+  src: url(../fonts/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Inter-Light";
+  src: url(../fonts/Inter-Light.ttf);
+}
 // ------Здесь переменные-----
 // -------Шрифты------
+$robslab-r: "RobotoSlab-Regular", Arial, sans-serif;
+$inter-l: "Inter-Light", Arial, sans-serif;
 
 // ---------Цвета--------
 $black-text: #000;
@@ -34,6 +46,7 @@ $text: 16px;
 body {
   color: $black-text;
   font-size: $text;
+  font-family: $robslab-r;
 }
 
 .wrapper {

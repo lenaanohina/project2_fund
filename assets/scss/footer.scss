@@ -7,7 +7,7 @@
   position: relative;
   &::before {
     content: "";
-    border-top: 5px solid purple; /* Измените цвет и толщину линии по вашему желанию */
+    border-top: 5px solid purple;
     position: absolute;
     width: 100%;
     top: 0;

@@ -1,5 +1,9 @@
 .footer {
   font-family: $inter-l;
+  width: $container;
+  margin: $mc;
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
   a {
     color: $black-text;
   }
@@ -29,13 +33,6 @@
   strong {
     font-family: $inter-b;
   }
-}
-
-.footer {
-  width: $container;
-  margin: $mc;
-  display: grid;
-  grid-template-columns: 20% 40% 40%;
 }
 
 @media screen and (max-width: 768px) {

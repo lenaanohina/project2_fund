@@ -188,6 +188,10 @@ body {
 
 .footer {
   font-family: "Inter-Light", Arial, sans-serif;
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
 }
 .footer a {
   color: #000;
@@ -217,13 +221,6 @@ body {
 }
 .footer strong {
   font-family: "Inter-Bold", Arial, sans-serif;
-}
-
-.footer {
-  width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 20% 40% 40%;
 }
 
 @media screen and (max-width: 768px) {

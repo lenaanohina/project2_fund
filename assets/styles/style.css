@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -192,6 +193,15 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 20% 40% 40%;
+  position: relative;
+}
+.footer::before {
+  content: "";
+  border-top: 5px solid purple; /* Измените цвет и толщину линии по вашему желанию */
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 2;
 }
 .footer a {
   color: #000;
@@ -208,6 +218,9 @@ body {
 }
 .footer__address {
   margin: 30px;
+}
+.footer__address a:hover {
+  color: #8b5ca3;
 }
 .footer__social {
   padding: 10px 0;

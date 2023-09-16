@@ -4,6 +4,15 @@
   margin: $mc;
   display: grid;
   grid-template-columns: 20% 40% 40%;
+  position: relative;
+  &::before {
+    content: "";
+    border-top: 5px solid purple; /* Измените цвет и толщину линии по вашему желанию */
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+  }
   a {
     color: $black-text;
   }
@@ -19,6 +28,9 @@
   }
   &__address {
     margin: 30px;
+    a:hover {
+      color: $purple-btn;
+    }
   }
   &__social {
     padding: 10px 0;

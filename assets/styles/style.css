@@ -215,6 +215,9 @@ body {
 .footer__social a {
   margin-right: 10px;
 }
+.footer strong {
+  font-family: "Inter-Bold", Arial, sans-serif;
+}
 
 .footer {
   width: 1200px;

@@ -4,15 +4,8 @@
   margin: $mc;
   display: grid;
   grid-template-columns: 20% 40% 40%;
-  position: relative;
-  &::before {
-    content: "";
-    border-top: 5px solid purple;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: 2;
-  }
+  border-top: 5px solid purple;
+
   a {
     color: $black-text;
   }

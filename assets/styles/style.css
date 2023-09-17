@@ -192,6 +192,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 20% 40% 40%;
+  border-top: 5px solid purple;
 }
 .footer a {
   color: #000;
@@ -208,6 +209,9 @@ body {
 }
 .footer__address {
   margin: 30px;
+}
+.footer__address a:hover {
+  color: #8b5ca3;
 }
 .footer__social {
   padding: 10px 0;

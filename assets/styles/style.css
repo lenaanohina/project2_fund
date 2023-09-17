@@ -67,14 +67,13 @@ body {
   text-align: center;
 }
 .aid__inner-content {
-  width: 565px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-right: 48px;
 }
 .aid__inner-wrap {
-  margin-bottom: 43px;
+  margin-bottom: 5px;
 }
 .aid__inner-text {
   color: #000;
@@ -86,8 +85,8 @@ body {
   letter-spacing: 0.18px;
 }
 .aid__wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .aid__inner-link {
   width: 560px;
@@ -106,13 +105,96 @@ body {
   border-radius: 22px;
 }
 .aid__inner-img {
-  background-image: url("../img/FRA95I6W93k.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  max-width: 100%;
+}
+.aid__img {
   width: 100%;
+  height: 100%;
+  border-radius: 22px;
 }
 
+@media screen and (max-width: 1200px) {
+  .aid__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .aid__title {
+    margin-bottom: 50px;
+  }
+  .aid__inner-img {
+    order: -1;
+    margin-bottom: 30px;
+  }
+  .aid__inner-wrap {
+    margin-bottom: 50px;
+  }
+  .aid__inner-link {
+    margin: 0 auto;
+  }
+  .aid__inner-content {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .aid__title {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+  }
+  .aid__inner-link {
+    width: 450px;
+  }
+  .aid__inner-wrap {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .aid__inner-link {
+    width: 300px;
+    font-size: 1.1em;
+  }
+  .aid__title {
+    margin-bottom: 30px;
+    font-size: 2em;
+  }
+  .aid__inner-wrap {
+    margin-bottom: 30px;
+  }
+  .aid__inner-text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  .aid__title {
+    font-size: 1.4em;
+  }
+  .aid__inner-img {
+    display: none;
+  }
+  .aid__inner-link {
+    width: 240px;
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 375px) {
+  .aid__inner-link {
+    width: 200px;
+    font-size: 1em;
+  }
+  .aid__inner-wrap {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .aid__title {
+    font-size: 1.1em;
+  }
+  .aid__inner-link {
+    width: 150px;
+    letter-spacing: 0em;
+  }
+  .aid__inner-text {
+    font-size: 0.8em;
+  }
+}
 .home {
   min-height: 800px;
   position: relative;

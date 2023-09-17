@@ -14,19 +14,37 @@ ul {
 
 a {
   text-decoration: none;
+<<<<<<< HEAD
   transition: 1s;
+=======
+  transition: 0.3s;
+>>>>>>> main
 }
 
 @font-face {
   font-family: "RobotoSlab-Regular";
   src: url(../fonts/RobotoSlab-Regular.ttf);
 }
+<<<<<<< HEAD
 
+=======
+@font-face {
+  font-family: "RobotoSlab-Bold";
+  src: url(../fonts/RobotoSlab-Bold.ttf);
+}
+>>>>>>> main
 @font-face {
   font-family: "Inter-Light";
   src: url(../fonts/Inter-Light.ttf);
 }
+<<<<<<< HEAD
 
+=======
+@font-face {
+  font-family: "Inter-Bold";
+  src: url(../fonts/Inter-Bold.ttf);
+}
+>>>>>>> main
 body {
   color: #000;
   font-size: 16px;
@@ -49,7 +67,10 @@ body {
   margin-top: 200px;
   padding: 0 15px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 .aid__title {
   color: #000;
   font-family: "RobotoSlab-Regular", Arial, sans-serif;
@@ -61,7 +82,10 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 .aid__inner-content {
   width: 565px;
   display: flex;
@@ -69,11 +93,17 @@ body {
   justify-content: space-between;
   margin-right: 48px;
 }
+<<<<<<< HEAD
 
 .aid__inner-wrap {
   margin-bottom: 43px;
 }
 
+=======
+.aid__inner-wrap {
+  margin-bottom: 43px;
+}
+>>>>>>> main
 .aid__inner-text {
   color: #000;
   font-family: "Inter-Light";
@@ -83,12 +113,18 @@ body {
   line-height: normal;
   letter-spacing: 0.18px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 .aid__wrapper {
   display: flex;
   justify-content: space-between;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 .aid__inner-link {
   width: 560px;
   background-color: #FFAC1C;
@@ -104,9 +140,13 @@ body {
   padding-bottom: 13px;
   text-align: center;
   border-radius: 22px;
+<<<<<<< HEAD
   letter-spacing: 1px;
 }
 
+=======
+}
+>>>>>>> main
 .aid__inner-img {
   background-image: url("../img/FRA95I6W93k.png");
   background-repeat: no-repeat;
@@ -115,4 +155,132 @@ body {
   width: 100%;
 }
 
+<<<<<<< HEAD
 /*# sourceMappingURL=style.css.map */
+=======
+.home {
+  min-height: 800px;
+  position: relative;
+}
+.home__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+.home__container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.home__container h1 {
+  color: #fff;
+  font-family: "RobotoSlab-Bold", Arial, sans-serif;
+  font-size: 3.5em;
+  font-weight: 700;
+}
+.home__container span {
+  color: #ffac1c;
+}
+.home__container p {
+  color: #fff;
+  font-family: "RobotoSlab-Regular", Arial, sans-serif;
+  font-size: 1.5em;
+}
+.home::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(70, 56, 76, 0.4);
+}
+
+.home__btns {
+  margin-top: 40px;
+}
+.home__btns a {
+  display: inline-block;
+  width: 300px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-family: "RobotoSlab-Regular", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 0.3s;
+  margin: 0 20px 20px;
+}
+.home__btns a:hover {
+  background: #8b5ca3;
+  border: none;
+  transform: scale(1.2);
+}
+.home__btns .btn-help {
+  background: #ffac1c;
+  border: none;
+}
+
+.footer {
+  font-family: "Inter-Light", Arial, sans-serif;
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  border-top: 5px solid purple;
+}
+.footer a {
+  color: #000;
+}
+.footer__logo {
+  text-align: center;
+  margin: 30px;
+}
+.footer__logo img {
+  max-width: 150px;
+}
+.footer__about {
+  margin: 30px;
+}
+.footer__address {
+  margin: 30px;
+}
+.footer__address a:hover {
+  color: #8b5ca3;
+}
+.footer__social {
+  padding: 10px 0;
+}
+.footer__social img {
+  width: 50px;
+  height: 50px;
+}
+.footer__social a {
+  margin-right: 10px;
+}
+.footer strong {
+  font-family: "Inter-Bold", Arial, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    grid-template-columns: 30% 70%;
+    width: 100%;
+  }
+  .footer__about {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+>>>>>>> main

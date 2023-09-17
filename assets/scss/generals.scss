@@ -14,17 +14,46 @@ ul {
 
 a {
   text-decoration: none;
-  transition: 1s;
+  transition: 0.3s;
 }
+
+@font-face {
+  font-family: "RobotoSlab-Regular";
+  src: url(../fonts/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+  font-family: "RobotoSlab-Bold";
+  src: url(../fonts/RobotoSlab-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Inter-Light";
+  src: url(../fonts/Inter-Light.ttf);
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url(../fonts/Inter-Bold.ttf);
+}
+
 // ------Здесь переменные-----
 // -------Шрифты------
+$robslab-r: "RobotoSlab-Regular", Arial, sans-serif;
+$robslab-b: "RobotoSlab-Bold", Arial, sans-serif;
+$inter-l: "Inter-Light", Arial, sans-serif;
+$inter-b: "Inter-Bold", Arial, sans-serif;
 
 // ---------Цвета--------
 $black-text: #000;
+$white-text: #fff;
+$yellow: #ffac1c;
+$yellow-btn: #ffac1c;
+$purple-btn: #8b5ca3;
 
 // --------Ограничивающие контейнеры-----
 $wrap: 1470px; //----это общее полотно, по макету 1440px, но +отступы по 15px-----
-$container: 1170px; //----контейнер с контентом----
+$container: 1200px; //----контейнер с контентом----
 //----Выравнивание по центру----
 $mc: 0 auto; //----margin centr----
 //----Размер шрифта----
@@ -34,6 +63,7 @@ $text: 16px;
 body {
   color: $black-text;
   font-size: $text;
+  font-family: $robslab-r;
 }
 
 .wrapper {

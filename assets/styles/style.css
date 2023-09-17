@@ -60,7 +60,7 @@ main body {
   padding: 0 15px;
 }
 
-main .aid__title {
+.aid__title {
   color: #000;
   font-family: "RobotoSlab-Regular", Arial, sans-serif;
   font-size: 48px;
@@ -120,9 +120,6 @@ main .aid__title {
   border-radius: 22px;
   letter-spacing: 1px;
 }
-
-
-
 
 .aid__inner-img {
   background-image: url("../img/FRA95I6W93k.png");

@@ -1,0 +1,54 @@
+.About{
+    margin: 200px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.About__tittle, .About__text{
+    text-align: center;
+    font-family: $robslab-r;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+.About__tittle{
+    max-width: 1226px;
+}
+.About__support-tittle{
+    max-width: 764px;
+    font-family: $robslab-r;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin-top: 50px;
+}
+.About__support{
+    width: 100%;
+    height: 754px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $yellow;
+    color:$white-text;
+    border-radius: 22px;
+    margin-top: 50px;
+}
+.About__support-paragraph{
+    max-width: 1140px;
+    max-height: fit-content;
+    font-family: $inter-l;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+#name{
+    color: $yellow;
+}

@@ -859,5 +859,21 @@ body {
     letter-spacing: 0em;
   }
 }
+h2 {
+  font-family: "RobotoSlab-Regular", Arial, sans-serif;
+  text-transform: capitalize;
+  font-size: 48px;
+  text-align: center;
+}
+
+.our-projects {
+  margin: 0 auto;
+}
+
+.carousel-item {
+  border: 1px solid black;
+  width: 85vw;
+  justify-content: space-between;
+}
 
 /*# sourceMappingURL=style.css.map */

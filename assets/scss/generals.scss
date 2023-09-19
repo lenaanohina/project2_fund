@@ -47,8 +47,9 @@ $inter-b: "Inter-Bold", Arial, sans-serif;
 // ---------Цвета--------
 $black-text: #000;
 $white-text: #fff;
-$yellow: #ffac1c;
-$yellow-btn: #ffac1c;
+$purple: #653880;
+$yellow: #f88937;
+$yellow-btn: #f88937;
 $purple-btn: #8b5ca3;
 
 // --------Ограничивающие контейнеры-----
@@ -75,4 +76,22 @@ body {
 .container {
   max-width: $container;
   margin: $mc;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
 }

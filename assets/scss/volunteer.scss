@@ -18,18 +18,15 @@
 
    &__content {
       background-color: #423B81;
-      position: relative;
    }
 
    &__content-wrap {
-      position: absolute;
-      top: 0px;
-      right: 35px;
       width: 450px;
       display: flex;
       flex-direction: column;
       height: 100%;
       justify-content: space-evenly;
+      padding: 10px;
    }
 
    &__content-title {
@@ -54,30 +51,29 @@
    }
 
    &__content-link {
-      width: 325px;
-      color: $white-text;
+      display: inline-block;
+      width: 300px;
+      height: 80px;
+      line-height: 80px;
       text-align: center;
       font-family: $robslab-r;
       font-size: 1.5em;
-      font-style: normal;
       font-weight: 700;
-      line-height: normal;
-      background-color: $yellow;
-      text-transform: uppercase;
-      cursor: pointer;
-      display: block;
-      margin: 0 auto 0;
-      padding: 13px;
-      border-radius: 22px;
+      background: $yellow-btn;
+      border-radius: 20px;
+      border: 2px solid $yellow-btn;
+      color: $white-text;
+      transition: 0.3s;
+      margin: 0 auto;
    }
 
    // hover эффект для кнопки Хочу помогать
-   // &__content-link:hover {
-   //    background: $purple-btn;
-   //    border: none;
-   //    transform: scale(1.2);
-   //    color: $white-text;
-   // }
+   &__content-link:hover {
+      background: $purple-btn;
+      border: 2px solid $purple-btn;
+      transform: scale(1.2);
+      color: $white-text;
+   }
 
    &__image {
       max-width: 100%;
@@ -86,14 +82,12 @@
    &__img {
       width: 100%;
       height: 100%;
+
    }
 }
 
 @media screen and (max-width: 1220px) {
-
    .volunteer {
-      position: relative;
-
       &__wrapper {
          grid-template-columns: 1fr;
       }
@@ -103,7 +97,7 @@
       }
 
       &__content {
-         min-height: 300px;
+         min-height: 350px;
          padding-bottom: 10px;
          padding-top: 10px;
       }
@@ -113,16 +107,8 @@
       }
 
       &__content-wrap {
-         position: static;
          justify-content: space-around;
          margin: 0 auto;
-      }
-
-      &__content-link {
-         width: 450px;
-         margin: 10px auto 10px;
-         text-align: center;
-         align-items: center;
       }
 
       &__title {
@@ -140,13 +126,19 @@
    }
 }
 
-@media screen and (max-width: 550px) {
+@media (max-width: 650px) {
    .volunteer {
       &__content-link {
-         width: 300px;
+         width: 225px;
+         height: 70px;
+         line-height: 70px;
          font-size: 1.1em;
       }
+   }
+}
 
+@media screen and (max-width: 550px) {
+   .volunteer {
       &__title {
          margin-bottom: 30px;
          font-size: 2em;
@@ -157,7 +149,7 @@
       }
 
       &__content-wrap {
-         width: 300px;
+         width: 380px;
       }
    }
 }
@@ -168,13 +160,12 @@
          font-size: 1.4em;
       }
 
-      &__content-link {
-         width: 240px;
-         font-size: 1.1em;
+      &__content-wrap {
+         width: 320px;
       }
 
       &__content-text {
-         font-size: 1em;
+         font-size: 1.2em;
       }
    }
 }
@@ -208,8 +199,10 @@
       }
 
       &__content-link {
-         width: 150px;
+         width: 160px;
          letter-spacing: 0em;
+         height: 70px;
+
       }
    }
 }

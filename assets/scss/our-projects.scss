@@ -9,8 +9,13 @@ h2 {
     margin: 0 auto;
 }
 
-.carousel-item {
-    border: 1px solid black;
-    width: 85vw;
-    justify-content: space-between;
+.carousel-inner {
+    background-color: #8b5ca480;
+}
+
+.carousel-item img {
+        object-fit: cover;
+        vertical-align: middle;
+        border-style: none;
+        height: 80vh;
 }

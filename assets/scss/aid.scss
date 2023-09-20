@@ -52,7 +52,6 @@
     font-weight: 700;
     background: $yellow-btn;
     border-radius: 20px;
-    border: 2px solid $yellow-btn;
     color: $white-text;
     transition: 0.3s;
     margin: 0 auto;
@@ -60,7 +59,6 @@
 
   &__inner-link:hover {
     background: $purple-btn;
-    border: 2px solid $purple-btn;
     transform: scale(1.2);
     color: $white-text;
   }

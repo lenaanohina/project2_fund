@@ -42,20 +42,27 @@
   }
 
   &__inner-link {
-    width: 560px;
-    background-color: $yellow;
-    color: $white-text;
+    display: inline-block;
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
     font-family: $robslab-r;
     font-size: 1.5em;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    cursor: pointer;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    text-align: center;
-    border-radius: 22px;
+    background: $yellow-btn;
+    border-radius: 20px;
+    border: 2px solid $yellow-btn;
+    color: $white-text;
+    transition: 0.3s;
+    margin: 0 auto;
+  }
+
+  &__inner-link:hover {
+    background: $purple-btn;
+    border: 2px solid $purple-btn;
+    transform: scale(1.2);
+    color: $white-text;
   }
 
   &__inner-img {
@@ -108,23 +115,25 @@
       font-size: 2.5em;
     }
 
-    &__inner-link {
-      width: 450px;
-    }
-
     &__inner-wrap {
       margin-bottom: 40px;
     }
   }
 }
 
-@media screen and (max-width: 550px) {
+@media (max-width: 650px) {
   .aid {
     &__inner-link {
-      width: 300px;
+      width: 225px;
+      height: 70px;
+      line-height: 70px;
       font-size: 1.1em;
     }
+  }
+}
 
+@media screen and (max-width: 550px) {
+  .aid {
     &__title {
       margin-bottom: 30px;
       font-size: 2em;
@@ -149,11 +158,6 @@
     &__inner-img {
       display: none;
     }
-
-    &__inner-link {
-      width: 240px;
-      font-size: 1.1em;
-    }
   }
 }
 
@@ -177,7 +181,7 @@
     }
 
     &__inner-link {
-      width: 150px;
+      width: 160px;
       letter-spacing: 0em;
     }
 

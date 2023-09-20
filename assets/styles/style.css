@@ -415,20 +415,26 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 .aid__inner-link {
-  width: 560px;
-  background-color: #f88937;
-  color: #fff;
+  display: inline-block;
+  width: 300px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
   font-family: "RobotoSlab-Regular", Arial, sans-serif;
   font-size: 1.5em;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
-  cursor: pointer;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  text-align: center;
-  border-radius: 22px;
+  background: #f88937;
+  border-radius: 20px;
+  border: 2px solid #f88937;
+  color: #fff;
+  transition: 0.3s;
+  margin: 0 auto;
+}
+.aid__inner-link:hover {
+  background: #8b5ca3;
+  border: 2px solid #8b5ca3;
+  transform: scale(1.2);
+  color: #fff;
 }
 .aid__inner-img {
   max-width: 100%;
@@ -469,18 +475,19 @@ body {
     margin-bottom: 40px;
     font-size: 2.5em;
   }
-  .aid__inner-link {
-    width: 450px;
-  }
   .aid__inner-wrap {
     margin-bottom: 40px;
   }
 }
-@media screen and (max-width: 550px) {
+@media (max-width: 650px) {
   .aid__inner-link {
-    width: 300px;
+    width: 225px;
+    height: 70px;
+    line-height: 70px;
     font-size: 1.1em;
   }
+}
+@media screen and (max-width: 550px) {
   .aid__title {
     margin-bottom: 30px;
     font-size: 2em;
@@ -499,10 +506,6 @@ body {
   .aid__inner-img {
     display: none;
   }
-  .aid__inner-link {
-    width: 240px;
-    font-size: 1.1em;
-  }
 }
 @media screen and (max-width: 375px) {
   .aid__inner-link {
@@ -518,7 +521,7 @@ body {
     font-size: 1.1em;
   }
   .aid__inner-link {
-    width: 150px;
+    width: 160px;
     letter-spacing: 0em;
   }
   .aid__inner-text {
@@ -837,17 +840,14 @@ body {
 }
 .volunteer__content {
   background-color: #423B81;
-  position: relative;
 }
 .volunteer__content-wrap {
-  position: absolute;
-  top: 0px;
-  right: 35px;
   width: 450px;
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: space-evenly;
+  padding: 10px;
 }
 .volunteer__content-title {
   color: #fff;
@@ -869,21 +869,26 @@ body {
   line-height: normal;
 }
 .volunteer__content-link {
-  width: 325px;
-  color: #fff;
+  display: inline-block;
+  width: 300px;
+  height: 80px;
+  line-height: 80px;
   text-align: center;
   font-family: "RobotoSlab-Regular", Arial, sans-serif;
   font-size: 1.5em;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-  background-color: #f88937;
-  text-transform: uppercase;
-  cursor: pointer;
-  display: block;
-  margin: 0 auto 0;
-  padding: 13px;
-  border-radius: 22px;
+  background: #f88937;
+  border-radius: 20px;
+  border: 2px solid #f88937;
+  color: #fff;
+  transition: 0.3s;
+  margin: 0 auto;
+}
+.volunteer__content-link:hover {
+  background: #8b5ca3;
+  border: 2px solid #8b5ca3;
+  transform: scale(1.2);
+  color: #fff;
 }
 .volunteer__image {
   max-width: 100%;
@@ -894,9 +899,6 @@ body {
 }
 
 @media screen and (max-width: 1220px) {
-  .volunteer {
-    position: relative;
-  }
   .volunteer__wrapper {
     grid-template-columns: 1fr;
   }
@@ -904,7 +906,7 @@ body {
     display: block;
   }
   .volunteer__content {
-    min-height: 300px;
+    min-height: 350px;
     padding-bottom: 10px;
     padding-top: 10px;
   }
@@ -912,15 +914,8 @@ body {
     margin-bottom: 30px;
   }
   .volunteer__content-wrap {
-    position: static;
     justify-content: space-around;
     margin: 0 auto;
-  }
-  .volunteer__content-link {
-    width: 450px;
-    margin: 10px auto 10px;
-    text-align: center;
-    align-items: center;
   }
   .volunteer__title {
     margin-bottom: 50px;
@@ -932,11 +927,15 @@ body {
     font-size: 2.5em;
   }
 }
-@media screen and (max-width: 550px) {
+@media (max-width: 650px) {
   .volunteer__content-link {
-    width: 300px;
+    width: 225px;
+    height: 70px;
+    line-height: 70px;
     font-size: 1.1em;
   }
+}
+@media screen and (max-width: 550px) {
   .volunteer__title {
     margin-bottom: 30px;
     font-size: 2em;
@@ -945,19 +944,18 @@ body {
     font-size: 1.5em;
   }
   .volunteer__content-wrap {
-    width: 300px;
+    width: 380px;
   }
 }
 @media screen and (max-width: 425px) {
   .volunteer__title {
     font-size: 1.4em;
   }
-  .volunteer__content-link {
-    width: 240px;
-    font-size: 1.1em;
+  .volunteer__content-wrap {
+    width: 320px;
   }
   .volunteer__content-text {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
 @media screen and (max-width: 375px) {
@@ -981,8 +979,9 @@ body {
     width: 200px;
   }
   .volunteer__content-link {
-    width: 150px;
+    width: 160px;
     letter-spacing: 0em;
+    height: 70px;
   }
 }
 

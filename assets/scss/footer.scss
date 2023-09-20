@@ -1,10 +1,9 @@
 .footer {
   font-family: $inter-l;
-  width: $container;
+  max-width: $wrap;
   margin: $mc;
   display: grid;
   grid-template-columns: 20% 40% 40%;
-  border-top: 5px solid purple;
 
   a {
     color: $black-text;
@@ -48,4 +47,9 @@
       display: none;
     }
   }
+}
+
+.footer-wrapper {
+  border-top: 5px solid purple;
+  background-color: #d1bbe1;
 }

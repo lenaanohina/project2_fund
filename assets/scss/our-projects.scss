@@ -7,6 +7,11 @@ h2 {
 
 .our-projects {
     margin: 0 auto;
+    margin-top: 10em;
+}
+
+.carousel {
+    margin-top: 3em;
 }
 
 .carousel-inner {
@@ -18,4 +23,16 @@ h2 {
         vertical-align: middle;
         border-style: none;
         height: 80vh;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.497);
+}
+
+.carousel-caption h5 {
+    font-family: $robslab-r;
+}
+
+.carousel-caption p {
+    font-family: $inter-l;
 }

@@ -397,6 +397,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin-right: 48px;
+  padding-top: 15px;
 }
 .aid__inner-wrap {
   margin-bottom: 5px;
@@ -995,6 +996,22 @@ body {
     letter-spacing: 0em;
     height: 70px;
   }
+}
+h2 {
+  font-family: "RobotoSlab-Regular", Arial, sans-serif;
+  text-transform: capitalize;
+  font-size: 48px;
+  text-align: center;
+}
+
+.our-projects {
+  margin: 0 auto;
+}
+
+.carousel-item {
+  border: 1px solid black;
+  width: 85vw;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

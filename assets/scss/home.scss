@@ -1,11 +1,15 @@
 .home {
   min-height: 800px;
   position: relative;
+  margin-bottom: 7em;
   &__img {
     width: 100%;
     height: 100%;
     position: absolute;
     object-fit: cover;
+  }
+  &__img-logo {
+    max-width: 37%;
   }
   &__container {
     position: absolute;
@@ -13,38 +17,48 @@
     bottom: 0;
     right: 0;
     left: 0;
-    z-index: 2;
+    padding: 80px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    text-align: center;
-    h1 {
-      color: $white-text;
-      font-family: $robslab-b;
+
+    p:nth-child(2) {
+      color: $purple;
+      font-family: $inter-l;
       font-size: 3.5em;
       font-weight: 700;
+      line-height: 55px;
     }
-    span {
-      color: $yellow;
-    }
-    p {
-      color: $white-text;
+    p:nth-child(3) {
+      padding-top: 10px;
+      color: $purple-btn;
       font-family: $robslab-r;
-      font-size: 1.5em;
+      font-size: 2em;
+      font-style: normal;
+      font-weight: 700;
     }
   }
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(70, 56, 76, 0.4);
+  &__container-h1 {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    max-height: 350px;
+
+    h1 {
+      padding-left: 15px;
+      color: $purple;
+      font-family: $inter-l;
+      font-weight: 700;
+      font-size: 7.5em;
+      line-height: 120px;
+      text-shadow: 5px 5px 5px #c5a6d7;
+    }
   }
 }
 
 .home__btns {
-  margin-top: 40px;
+  margin-top: 30px;
   a {
     display: inline-block;
     width: 300px;
@@ -54,19 +68,133 @@
     font-family: $robslab-r;
     font-size: 24px;
     font-weight: 700;
+    background: $yellow-btn;
     border-radius: 20px;
-    border: 1px solid #fff;
+    border: 2px solid $yellow-btn;
     color: $white-text;
     transition: 0.3s;
-    margin: 0 20px 20px;
+    margin: 0 40px 20px 0;
     &:hover {
       background: $purple-btn;
-      border: none;
+      border: 2px solid $purple-btn;
       transform: scale(1.2);
     }
   }
   .btn-help {
-    background: $yellow-btn;
-    border: none;
+    background: none;
+    color: $yellow-btn;
+    &:hover {
+      color: $white-text;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .home {
+    h1 {
+      font-size: 6em;
+      line-height: 100px;
+    }
+    p:nth-child(2) {
+      font-size: 3em;
+    }
+    p:nth-child(3) {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .home {
+    &__img-logo {
+      max-width: 40%;
+    }
+    h1 {
+      font-size: 5.5em;
+      line-height: 80px;
+    }
+    p:nth-child(2) {
+      line-height: 45px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    h1 {
+      font-size: 3.5em;
+      line-height: 50px;
+    }
+    p:nth-child(2) {
+      font-size: 2.5em;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .home {
+    min-height: 600px;
+    &__container {
+      padding: 0 30px 0;
+    }
+    &__img-logo {
+      max-width: 50%;
+    }
+    h1 {
+      font-size: 3em;
+      line-height: 50px;
+      text-shadow: 2px 2px 2px #c5a6d7;
+    }
+    p:nth-child(2) {
+      font-size: 1.8em;
+      line-height: 35px;
+    }
+    p:nth-child(3) {
+      font-size: 1em;
+    }
+    .home__btns {
+      margin-top: 10px;
+      a {
+        width: 225px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 18px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    &__img-logo {
+      max-width: 45%;
+    }
+    &__container {
+      padding: 0;
+    }
+    h1 {
+      font-size: 2.5em;
+      padding: 5px;
+    }
+    p:nth-child(2) {
+      font-size: 1.3em;
+      line-height: 25px;
+      margin: 0;
+    }
+    p:nth-child(3) {
+      font-size: 0.8em;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .home {
+    width: 260px;
+    min-height: 500px;
+    h1 {
+      font-size: 2em;
+      line-height: 30px;
+    }
   }
 }

@@ -19,22 +19,25 @@ a {
 
 @font-face {
   font-family: "RobotoSlab-Regular";
-  src: url(../fonts/RobotoSlab-Regular.ttf);
+  src: url(../fonts/RobotoSlab-Regular.ttf) format("truetype");
+  font-weight: 500;
 }
 
-@font-face {
-  font-family: "RobotoSlab-Bold";
-  src: url(../fonts/RobotoSlab-Bold.ttf);
-}
+// @font-face {
+//   font-family: "RobotoSlab-Bold";
+//   src: url(../fonts/RobotoSlab-Bold.ttf);
+// }
 
 @font-face {
   font-family: "Inter-Light";
-  src: url(../fonts/Inter-Light.ttf);
+  src: url(../fonts/Inter-Light.ttf) format("truetype");
+  font-weight: 300;
 }
 
 @font-face {
   font-family: "Inter-Bold";
-  src: url(../fonts/Inter-Bold.ttf);
+  src: url(../fonts/Inter-Bold.ttf) format("truetype");
+  font-weight: 700;
 }
 
 // ------Здесь переменные-----
@@ -47,8 +50,9 @@ $inter-b: "Inter-Bold", Arial, sans-serif;
 // ---------Цвета--------
 $black-text: #000;
 $white-text: #fff;
-$yellow: #ffac1c;
-$yellow-btn: #ffac1c;
+$purple: #653880;
+$yellow: #f88937;
+$yellow-btn: #f88937;
 $purple-btn: #8b5ca3;
 
 // --------Ограничивающие контейнеры-----
@@ -75,4 +79,22 @@ body {
 .container {
   max-width: $container;
   margin: $mc;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: none;
+  }
 }

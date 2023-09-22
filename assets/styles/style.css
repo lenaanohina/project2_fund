@@ -712,7 +712,6 @@ body {
 }
 .footer {
   font-family: "Inter-Light", Arial, sans-serif;
-  max-width: 1470px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 20% 40% 40%;
@@ -722,10 +721,11 @@ body {
 }
 .footer__logo {
   text-align: center;
-  margin: 30px;
+  margin: 30px 5px 0 0;
 }
 .footer__logo img {
   max-width: 150px;
+  width: 100%;
 }
 .footer__about {
   margin: 30px;
@@ -742,9 +742,14 @@ body {
 .footer__social img {
   width: 50px;
   height: 50px;
+  transition: transform 0.3s;
 }
 .footer__social a {
   margin-right: 10px;
+  display: inline-block;
+}
+.footer__social a:hover img {
+  transform: scale(1.4);
 }
 .footer strong {
   font-family: "Inter-Bold", Arial, sans-serif;

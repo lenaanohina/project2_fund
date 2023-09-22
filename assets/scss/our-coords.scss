@@ -1,0 +1,72 @@
+#coords-carousel-space {
+  margin: 50px 0 100px;
+}
+#coords-carousel {
+  color: $black-text;
+  font-size: $text;
+  font-family: $robslab-r;
+
+  span {
+    font-size: 16px;
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 10%;
+  }
+  .card {
+    border: none;
+  }
+  .card-img {
+    padding: 15px;
+  }
+  .img-fluid {
+    border-radius: 15px;
+    width: 100%;
+  }
+  .carousel-item {
+    width: 100%;
+    border: none;
+  }
+  @media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+      display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+      display: block;
+    }
+  }
+
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+
+  @media (min-width: 768px) {
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(16.66666667%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-16.66666667%);
+    }
+  }
+
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start {
+    transform: translateX(0);
+  }
+}
+.our-coords__title {
+  font-family: $robslab-r;
+  text-transform: capitalize;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 1.5em;
+}

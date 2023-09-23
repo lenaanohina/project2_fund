@@ -32,4 +32,4 @@
 
 ---
 
-:link: Сайт размещен на GitHub Pages по адресу: -здесь будет ссылка
+:link: Сайт размещен на GitHub Pages по адресу: https://lenaanohina.github.io/project2_fund/

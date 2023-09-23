@@ -68,6 +68,7 @@ body {
   max-width: $wrap;
   margin: $mc;
   padding: 0 15px;
+  scroll-behavior: smooth;
 }
 
 .container {

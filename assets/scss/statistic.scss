@@ -41,8 +41,12 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .statistic {
     display: none;
+    margin-bottom: 1em;
+  }
+  .statistic__block {
+    margin-bottom: 4em;
   }
 }

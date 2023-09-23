@@ -1,110 +1,118 @@
-.about{
-    margin-bottom: 200px;
-    width: 100%;
-    max-height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+.about {
+  margin-bottom: 10em;
+  width: 100%;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
-.about__tittle, .about__text, .about__support-tittle{
-    text-align: center;
-    font-family: $robslab-r;
-    font-size: 3em;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    letter-spacing: 0.48px;
+.about__tittle,
+.about__text,
+.about__support-tittle {
+  text-align: center;
+  font-family: $robslab-r;
+  font-size: 3em;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.48px;
 }
-.about__tittle{
-    max-width: 100%;
-    margin-bottom: 30px;
+.about__tittle {
+  max-width: 100%;
+  margin-bottom: 30px;
 }
-.about__text{
-    font-weight:lighter !important;
+.about__text {
+  font-weight: lighter !important;
 }
-.about__support-tittle{
-    max-width: 764px;
-    margin-top: 50px;
+.about__support-tittle {
+  max-width: 764px;
+  margin-top: 50px;
 }
-.about__support{
-    width: 100%;
-    max-height: fit-content;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    background-color: $yellow;
-    color:$white-text;
-    border-radius: 22px;
-    margin-top: 60px;
+.about__support {
+  width: 100%;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $yellow;
+  color: $white-text;
+  border-radius: 22px;
+  margin-top: 60px;
 }
-.about__support-paragraph{
-    max-width: 1140px;
-    max-height: fit-content;
-    font-family: $inter-l;
-    font-size: 1.5em;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 50px;
+.about__support-paragraph {
+  max-width: 1140px;
+  max-height: fit-content;
+  font-family: $inter-l;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 50px;
 }
-#name{
-    color: $yellow;
+#name {
+  color: $yellow;
 }
-.about__support-video{
-    max-width: 100%;
-    max-height: 550px;
-    margin: 30px auto;
+.about__support-video {
+  max-width: 100%;
+  max-height: 550px;
+  margin: 30px auto;
 }
 @media (max-width: 1200px) {
-    .about__support-paragraph{
-        padding: 0 10px;
-}
-.about__support-video{
+  .about__support-paragraph {
+    padding: 0 10px;
+  }
+  .about__support-video {
     max-width: 90%;
-}
+  }
 }
 @media (max-width: 992px) {
-    .about__tittle, .about__text, .about__support-tittle{
-        font-size: 2em;
-}
-.about__support-paragraph{
+  .about__tittle,
+  .about__text,
+  .about__support-tittle {
+    font-size: 2em;
+  }
+  .about__support-paragraph {
     font-size: 1em;
-}
-.about{
+  }
+  .about {
     margin-bottom: 100px;
+  }
 }
+@media (max-width: 768px) {
+  .about__tittle,
+  .about__text,
+  .about__support-tittle {
+    font-size: 1.5em;
+    padding: 0 20px;
+  }
+  .about__support-paragraph {
+    font-size: 0.8em;
+    padding: 0 20px;
+  }
+  .about__support {
+    margin-top: 40px;
+  }
 }
-@media (max-width: 768px){
-    .about__tittle, .about__text, .about__support-tittle{
-        font-size: 1.5em;
-        padding: 0 20px;
-    }
-    .about__support-paragraph{
-        font-size: 0.8em;
-        padding: 0 20px;
-    }
-    .about__support{
-        margin-top: 40px;
-    }
-}
-@media screen and (max-width: 375px){
-    .about{
-        min-width: 350px;
-    }
-    .about__tittle, .about__text, .about__support-tittle{
-        font-size: 1em;
-    }
-    .about__support-tittle{
-        margin-top: 20px;
-    }
-    .about__support-paragraph{
-        margin-bottom: 20px;
-    }
-    .about__support{
-        margin-top: 20px;
-    }
-    .about__support-video{
-        margin: 20px 0;
-    }
+@media screen and (max-width: 375px) {
+  .about {
+    min-width: 350px;
+  }
+  .about__tittle,
+  .about__text,
+  .about__support-tittle {
+    font-size: 1em;
+  }
+  .about__support-tittle {
+    margin-top: 20px;
+  }
+  .about__support-paragraph {
+    margin-bottom: 20px;
+  }
+  .about__support {
+    margin-top: 20px;
+  }
+  .about__support-video {
+    margin: 20px 0;
+  }
 }

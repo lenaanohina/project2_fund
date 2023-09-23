@@ -16,6 +16,18 @@
     min-width: 334px;
     min-height: 342px;
   }
+  @media (max-width: 1200px) {
+    &__block {
+      width: 30%;
+      min-width: 30%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .statistic {
+    display: none;
+  }
 }
 
 .statistic__title {

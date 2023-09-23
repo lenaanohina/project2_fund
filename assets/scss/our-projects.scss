@@ -7,10 +7,47 @@ h2 {
 
 .our-projects {
     margin: 0 auto;
+    margin-top: 10em;
 }
 
-.carousel-item {
-    border: 1px solid black;
-    width: 85vw;
-    justify-content: space-between;
+.our-projects__box {
+    margin-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
+.our-projects__box .card {
+    background-color: rgba(171, 111, 171, 0.459);
+    margin-top: 1.5em;
+    border: 1px solid $yellow;
+}
+
+.our-projects__box .card img {
+    object-fit: cover;
+    height: 12em;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2em;
+    }
+
+
+.our-projects__box {
+    margin-top: 1.5em;
+    }
+}
+
+@media (max-width: 425px) {
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+
+.our-projects__box {
+    margin-top: 1em;
+    }
+}
+

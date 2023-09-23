@@ -713,7 +713,6 @@ body {
 }
 .footer {
   font-family: "Inter-Light", Arial, sans-serif;
-  max-width: 1470px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 20% 40% 40%;
@@ -723,10 +722,11 @@ body {
 }
 .footer__logo {
   text-align: center;
-  margin: 30px;
+  margin: 30px 5px 0 0;
 }
 .footer__logo img {
   max-width: 150px;
+  width: 100%;
 }
 .footer__about {
   margin: 30px;
@@ -743,9 +743,14 @@ body {
 .footer__social img {
   width: 50px;
   height: 50px;
+  transition: transform 0.3s;
 }
 .footer__social a {
   margin-right: 10px;
+  display: inline-block;
+}
+.footer__social a:hover img {
+  transform: scale(1.4);
 }
 .footer strong {
   font-family: "Inter-Bold", Arial, sans-serif;
@@ -765,42 +770,42 @@ body {
   background-color: #d1bbe1;
 }
 
-.About {
-  margin: 200px 0;
+.about {
+  margin-bottom: 200px;
   width: 100%;
+  max-height: fit-content;
   display: flex;
   flex-direction: column;
   align-content: center;
 }
 
-.About__tittle, .About__text {
+.about__tittle, .about__text, .about__support-tittle {
   text-align: center;
   font-family: "RobotoSlab-Regular", Arial, sans-serif;
-  font-size: 48px;
+  font-size: 3em;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   letter-spacing: 0.48px;
 }
 
-.About__tittle {
-  max-width: 1226px;
+.about__tittle {
+  max-width: 100%;
+  margin-bottom: 30px;
 }
 
-.About__support-tittle {
+.about__text {
+  font-weight: lighter !important;
+}
+
+.about__support-tittle {
   max-width: 764px;
-  font-family: "RobotoSlab-Regular", Arial, sans-serif;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  letter-spacing: 0.48px;
   margin-top: 50px;
 }
 
-.About__support {
+.about__support {
   width: 100%;
-  height: 754px;
+  max-height: fit-content;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -809,14 +814,14 @@ body {
   background-color: #f88937;
   color: #fff;
   border-radius: 22px;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
-.About__support-paragraph {
+.about__support-paragraph {
   max-width: 1140px;
   max-height: fit-content;
   font-family: "Inter-Light", Arial, sans-serif;
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: 400;
   line-height: normal;
   margin-bottom: 50px;
@@ -826,6 +831,64 @@ body {
   color: #f88937;
 }
 
+.about__support-video {
+  max-width: 100%;
+  max-height: 550px;
+  margin: 30px auto;
+}
+
+@media (max-width: 1200px) {
+  .about__support-paragraph {
+    padding: 0 10px;
+  }
+  .about__support-video {
+    max-width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  .about__tittle, .about__text, .about__support-tittle {
+    font-size: 2em;
+  }
+  .about__support-paragraph {
+    font-size: 1em;
+  }
+  .about {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .about__tittle, .about__text, .about__support-tittle {
+    font-size: 1.5em;
+    padding: 0 20px;
+  }
+  .about__support-paragraph {
+    font-size: 0.8em;
+    padding: 0 20px;
+  }
+  .about__support {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .about {
+    min-width: 350px;
+  }
+  .about__tittle, .about__text, .about__support-tittle {
+    font-size: 1em;
+  }
+  .about__support-tittle {
+    margin-top: 20px;
+  }
+  .about__support-paragraph {
+    margin-bottom: 20px;
+  }
+  .about__support {
+    margin-top: 20px;
+  }
+  .about__support-video {
+    margin: 20px 0;
+  }
+}
 .volunteer__title {
   color: #000;
   font-family: "RobotoSlab-Regular", Arial, sans-serif;
@@ -1010,14 +1073,43 @@ h2 {
 
 .our-projects {
   margin: 0 auto;
+  margin-top: 10em;
 }
 
-.carousel-item {
-  border: 1px solid black;
-  width: 85vw;
-  justify-content: space-between;
+.our-projects__box {
+  margin-top: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
+.our-projects__box .card {
+  background-color: rgba(171, 111, 171, 0.459);
+  margin-top: 1.5em;
+  border: 1px solid #f88937;
+}
+
+.our-projects__box .card img {
+  object-fit: cover;
+  height: 12em;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2em;
+  }
+  .our-projects__box {
+    margin-top: 1.5em;
+  }
+}
+@media (max-width: 425px) {
+  h2 {
+    font-size: 1.5em;
+  }
+  .our-projects__box {
+    margin-top: 1em;
+  }
+}
 #coords-carousel-space {
   margin: 50px 0 100px;
 }
@@ -1047,7 +1139,6 @@ h2 {
 #coords-carousel .img-fluid {
   border-radius: 15px;
   width: 100%;
-  height: 144.07px;
 }
 #coords-carousel .carousel-item {
   width: 100%;
@@ -1234,7 +1325,18 @@ h2 {
   min-width: 334px;
   min-height: 342px;
 }
+@media (max-width: 1200px) {
+  .statistic__block {
+    width: 30%;
+    min-width: 30%;
+  }
+}
 
+@media (max-width: 768px) {
+  .statistic {
+    display: none;
+  }
+}
 .statistic__title {
   color: #653880;
   font-size: 4.5em;
@@ -1252,6 +1354,72 @@ h2 {
 
 .statistic__img {
   max-width: 125px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 15% 65% 20%;
+  max-height: 122px;
+}
+.header__logo {
+  max-width: 130px;
+  width: 100%;
+  margin: 0 15px;
+}
+
+.header__nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  line-height: 60px;
+  margin-bottom: 0;
+  margin-right: 20px;
+}
+
+.header__menu-link a {
+  color: #949292;
+  font-family: "Inter-Light", Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+.header__menu-link a:hover {
+  color: #8b5ca3;
+  font-weight: 700;
+}
+
+.header__btn {
+  display: inline-block;
+  max-width: 250px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-family: "RobotoSlab-Regular", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  background: #f88937;
+  border-radius: 20px;
+  color: #fff;
+  transition: 0.3s;
+  margin: 10px 25px 10px;
+}
+.header__btn:hover {
+  background: #8b5ca3;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+@media (max-width: 1200px) {
+  .header {
+    grid-template-columns: 15% 60% 25%;
+  }
+}
+@media (max-width: 992px) {
+  .header {
+    grid-template-columns: 15% 85%;
+  }
+  .header__btn {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

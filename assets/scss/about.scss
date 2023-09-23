@@ -1,5 +1,5 @@
 .about {
-  margin-bottom: 10em;
+  margin-bottom: 12em;
   width: 100%;
   max-height: fit-content;
   display: flex;
@@ -76,10 +76,13 @@
     font-size: 1em;
   }
   .about {
-    margin-bottom: 100px;
+    margin-bottom: 4.3em;
   }
 }
 @media (max-width: 768px) {
+  .about {
+    margin-bottom: 3.5em;
+  }
   .about__tittle,
   .about__text,
   .about__support-tittle {

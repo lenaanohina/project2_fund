@@ -469,6 +469,10 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  .aid {
+    margin-bottom: 7em;
+    margin-top: 7em;
+  }
   .aid__title {
     margin-bottom: 40px;
     font-size: 2.5em;
@@ -773,7 +777,7 @@ body {
 }
 
 .about {
-  margin-bottom: 10em;
+  margin-bottom: 12em;
   width: 100%;
   max-height: fit-content;
   display: flex;
@@ -859,10 +863,13 @@ body {
     font-size: 1em;
   }
   .about {
-    margin-bottom: 100px;
+    margin-bottom: 4.3em;
   }
 }
 @media (max-width: 768px) {
+  .about {
+    margin-bottom: 3.5em;
+  }
   .about__tittle,
   .about__text,
   .about__support-tittle {
@@ -1067,7 +1074,7 @@ h2 {
 
 .our-projects {
   margin: 0 auto;
-  margin-top: 10em;
+  margin-top: 12em;
 }
 
 .our-projects__box {
@@ -1091,6 +1098,9 @@ h2 {
 @media (max-width: 768px) {
   h2 {
     font-size: 2em;
+  }
+  .our-projects {
+    margin-top: 7em;
   }
   .our-projects__box {
     margin-top: 1.5em;
@@ -1126,6 +1136,10 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+  .reviews {
+    margin-top: 7em;
+    margin-bottom: 7em;
+  }
   .reviews__wrapper {
     column-count: 2;
   }
@@ -1251,7 +1265,7 @@ h2 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 6rem;
-  margin-bottom: 7rem;
+  margin-bottom: 12em;
 }
 .about-us-two__photo-right {
   grid-column-start: 2;
@@ -1347,7 +1361,7 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 12em;
+  margin-bottom: 8em;
 }
 .statistic__block {
   display: flex;
@@ -1389,10 +1403,6 @@ h2 {
 @media (max-width: 768px) {
   .statistic {
     display: none;
-    margin-bottom: 1em;
-  }
-  .statistic__block {
-    margin-bottom: 4em;
   }
 }
 .header {

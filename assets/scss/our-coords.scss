@@ -1,3 +1,13 @@
+.our-coords {
+  &__title {
+    font-family: $robslab-r;
+    text-transform: capitalize;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
+}
+
 #coords-carousel-space {
   margin: 50px 0 100px;
 }
@@ -62,11 +72,4 @@
   .carousel-inner .carousel-item-start {
     transform: translateX(0);
   }
-}
-.our-coords__title {
-  font-family: $robslab-r;
-  text-transform: capitalize;
-  font-size: 48px;
-  text-align: center;
-  margin-bottom: 1.5em;
 }

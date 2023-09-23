@@ -88,15 +88,15 @@
   }
   .about__support-paragraph {
     font-size: 0.8em;
-    padding: 0 20px;
+    padding: 0 10px;
   }
   .about__support {
     margin-top: 40px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   .about {
-    min-width: 350px;
+    min-width: 280px;
   }
   .about__tittle,
   .about__text,
@@ -113,6 +113,6 @@
     margin-top: 20px;
   }
   .about__support-video {
-    margin: 20px 0;
+    margin: 10px 0;
   }
 }

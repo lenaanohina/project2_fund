@@ -11,22 +11,10 @@
     text-align: center;
     border: 2px solid $purple;
     border-radius: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding: 10px;
     min-width: 334px;
     min-height: 342px;
-  }
-  @media (max-width: 1200px) {
-    &__block {
-      width: 30%;
-      min-width: 30%;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .statistic {
-    display: none;
   }
 }
 
@@ -46,4 +34,19 @@
 
 .statistic__img {
   max-width: 125px;
+}
+@media (max-width: 1200px) {
+  .statistic__block {
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .statistic {
+    display: none;
+    margin-bottom: 1em;
+  }
+  .statistic__block {
+    margin-bottom: 4em;
+  }
 }

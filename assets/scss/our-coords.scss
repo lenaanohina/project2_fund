@@ -1,3 +1,27 @@
+.our-coords {
+  &__title {
+    font-family: $robslab-r;
+    text-transform: capitalize;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 2em;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .our-coords {
+    h2 {
+      font-size: 1.5em;
+      text-align: center;
+    }
+  }
+}
+
 #coords-carousel-space {
   margin: 50px 0 100px;
 }
@@ -62,11 +86,4 @@
   .carousel-inner .carousel-item-start {
     transform: translateX(0);
   }
-}
-.our-coords__title {
-  font-family: $robslab-r;
-  text-transform: capitalize;
-  font-size: 48px;
-  text-align: center;
-  margin-bottom: 1.5em;
 }

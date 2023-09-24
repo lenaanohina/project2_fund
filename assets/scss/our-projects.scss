@@ -1,53 +1,52 @@
 h2 {
-    font-family: $robslab-r;
-    text-transform: capitalize;
-    font-size: 48px;
-    text-align: center;
+  font-family: $robslab-r;
+  text-transform: capitalize;
+  font-size: 48px;
+  text-align: center;
 }
 
 .our-projects {
-    margin: 0 auto;
-    margin-top: 10em;
+  margin: 0 auto;
+  margin-top: 12em;
 }
 
 .our-projects__box {
-    margin-top: 3em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  margin-top: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .our-projects__box .card {
-    background-color: rgba(171, 111, 171, 0.459);
-    margin-top: 1.5em;
-    border: 1px solid $yellow;
+  background-color: rgba(171, 111, 171, 0.459);
+  margin-top: 1.5em;
+  border: 1px solid $yellow;
 }
 
 .our-projects__box .card img {
-    object-fit: cover;
-    height: 12em;
+  object-fit: cover;
+  height: 12em;
 }
 
 @media (max-width: 768px) {
-    h2 {
-        font-size: 2em;
-    }
+  h2 {
+    font-size: 2em;
+  }
+  .our-projects {
+    margin-top: 7em;
+  }
 
-
-.our-projects__box {
+  .our-projects__box {
     margin-top: 1.5em;
-    }
+  }
 }
 
 @media (max-width: 425px) {
+  h2 {
+    font-size: 1.5em;
+  }
 
-    h2 {
-        font-size: 1.5em;
-    }
-
-
-.our-projects__box {
+  .our-projects__box {
     margin-top: 1em;
-    }
+  }
 }
-

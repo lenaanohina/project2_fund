@@ -771,6 +771,24 @@ body {
   border-top: 5px solid purple;
   background-color: #d1bbe1;
 }
+.footer-wrapper__authors {
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: "Inter-Light", Arial, sans-serif;
+}
+.footer-wrapper__authors p {
+  margin: 0;
+}
+.footer-wrapper__authors a {
+  text-decoration: none;
+  color: #8b5ca3;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+.footer-wrapper__authors a:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
 
 .about {
   margin-bottom: 10em;

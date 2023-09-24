@@ -43,6 +43,7 @@
       }
     }
   }
+
   strong {
     font-family: $inter-b;
   }
@@ -61,4 +62,23 @@
 .footer-wrapper {
   border-top: 5px solid purple;
   background-color: #d1bbe1;
+  &__authors {
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: $inter-l;
+    p {
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $purple-btn;
+      transition: transform 0.3s;
+      display: inline-block;
+      &:hover {
+      transform: scale(1.4);
+      cursor: pointer;
+      }
+    }
+  }
 }

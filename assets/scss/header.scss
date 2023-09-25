@@ -26,6 +26,7 @@
     }
   }
 }
+
 .header__btn {
   display: inline-block;
   max-width: 250px;
@@ -68,6 +69,24 @@
   width: 55px;
   height: 35px;
   display: none;
+}
+
+.topmenu {
+  position: relative;
+  display: inline-block;
+}
+.header__submenu {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  min-height: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.topmenu:hover .header__submenu {
+  display: block;
 }
 
 @media (max-width: 1200px) {
@@ -164,5 +183,8 @@
   }
   #check-menu:checked ~ .burger-line:nth-of-type(3) {
     transform: rotate(-45deg);
+  }
+  .header__menu-link:nth-child(5) {
+    display: none;
   }
 }

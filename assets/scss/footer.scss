@@ -1,6 +1,5 @@
 .footer {
   font-family: $inter-l;
-  // max-width: $wrap;
   margin: $mc;
   display: grid;
   grid-template-columns: 20% 40% 40%;
@@ -8,6 +7,7 @@
   a {
     color: $black-text;
   }
+
   &__logo {
     text-align: center;
     margin: 30px 5px 0 0;
@@ -16,15 +16,18 @@
       width: 100%;
     }
   }
+
   &__about {
     margin: 30px;
   }
+
   &__address {
     margin: 30px;
     a:hover {
       color: $purple-btn;
     }
   }
+
   &__social {
     padding: 10px 0;
     img {
@@ -76,9 +79,44 @@
       transition: transform 0.3s;
       display: inline-block;
       &:hover {
-      transform: scale(1.4);
-      cursor: pointer;
+        transform: scale(1.4);
+        cursor: pointer;
       }
+    }
+  }
+}
+.footer__menu-label {
+  cursor: pointer;
+}
+
+.footer__menu-toggle {
+  display: none;
+
+  &:checked + .footer__menu-dropdown {
+    display: block;
+  }
+}
+
+.footer__menu-dropdown {
+  display: none;
+  background-color: rgb(148, 86, 197);
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(249, 247, 247, 0.1);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  padding: 10px;
+  list-style: none;
+
+  a {
+    text-decoration: underline;
+    color: #f9f7f7;
+    display: block;
+    padding: 5px 0;
+
+    &:hover {
+      background-color: #f0f0f0;
     }
   }
 }

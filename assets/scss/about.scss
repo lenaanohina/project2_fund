@@ -78,6 +78,9 @@
   .about {
     margin-bottom: 4.3em;
   }
+  .about__support-video {
+    height: 400px;
+  }
 }
 @media (max-width: 768px) {
   .about {
@@ -96,7 +99,16 @@
   .about__support {
     margin-top: 40px;
   }
+  .about__support-video {
+    height: 300px;
+  }
 }
+@media (max-width: 480px) {
+  .about__support-video {
+    height: 200px;
+  }
+}
+
 @media screen and (max-width: 380px) {
   .about {
     min-width: 280px;
@@ -117,5 +129,6 @@
   }
   .about__support-video {
     margin: 10px 0;
+    height: 150px;
   }
 }
